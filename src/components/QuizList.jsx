@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 /* eslint-disable react/prop-types */
 import QuizListItem from "./QuizListItem";
 import Loading from "../components/Loading";

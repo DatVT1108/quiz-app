@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import { Select, Option } from "@material-tailwind/react";
 import { useState } from "react";
 import QuizList from "../components/QuizList";
