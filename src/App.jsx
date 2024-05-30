@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from "react";
 import Loading from "./components/Loading";

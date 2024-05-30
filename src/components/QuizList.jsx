@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 /* eslint-disable react/prop-types */
 import QuizListItem from "./QuizListItem";
 import Loading from "../components/Loading";
@@ -87,7 +85,7 @@ export default function QuizList({ isLoading, isError, quizzes }) {
     <div className="w-full flex flex-col gap-5">
       {renderedQuizzes}
       <div className="flex">
-        {(selectedCount === quizzes.length) && (
+        {(selectedCount === quizzes?.length) && (
           <Button className="mt-4 mx-auto bg-gray-800 w-28" onClick={handleSubmitQuiz}>
             Submit
           </Button>
