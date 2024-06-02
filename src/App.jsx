@@ -7,7 +7,7 @@ const QuizResult = lazy(() => import("./pages/QuizResult"));
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={"/quiz-app"}>
             <Suspense fallback={<Loading />}>
                 <Routes>
                     <Route path="/" element={<QuizCreate />} />

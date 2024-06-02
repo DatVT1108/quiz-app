@@ -27,6 +27,13 @@ export default function QuizList({ isLoading, isError, quizzes }) {
 
   let selectedCount = Object.keys(selectedOptions).length;
 
+  // Reset count on loading
+  useEffect(() => {
+    if (isLoading) {
+      setSelectedOptions({});
+    }
+  }, [isLoading])
+
   // Handling random options
   const [quizWithRandomOptions, setQuizWithRandomOptions] = useState([]);
 
@@ -44,8 +51,6 @@ export default function QuizList({ isLoading, isError, quizzes }) {
         return newQuizzes;
       });
     }
-
-    return () => setSelectedOptions({});
   }, [quizzes])
 
   // Render quizzies
